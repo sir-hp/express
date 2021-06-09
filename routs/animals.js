@@ -20,7 +20,7 @@ router.get("/animals", async function (request, response, next) {
         }
 
         let apiUrl = `${request.protocol}://${request.hostname}${request.hostname === "localhost" ? ":" + process.env.PORT : ''}`
-        let apiPath = `${request.baseUrl}${request.path} `
+        let apiPath = `${request.baseUrl}${request.path}`
         console.log(apiUrl);
 
         let output = {
